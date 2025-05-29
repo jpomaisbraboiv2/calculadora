@@ -1,9 +1,18 @@
+body {
+    background-color: #09090B;
+}
+
+button {
+    border: 1px solid #92929262;
+    cursor: pointer;
+}
+
 .calculator {
     max-width: 400px;
-    margin: auto;
+    margin: 3rem auto;
     display: flex;
     flex-direction: column;
-    border: 1px solid #ccc;
+    border: 1px solid #92929262;
     border-radius: 15px;
     overflow: hidden;
     font-family: sans-serif;
@@ -46,13 +55,15 @@
                 div {
                     display: flex;
                     width: 100%;
+
+                    button {
+                        flex: 1;
+                        background-color: #fff;
+                        padding: 20px;
+                        font-size: 18px;
+                    }
                 }
 
-                button {
-                    flex: 1;
-                    padding: 20px;
-                    font-size: 18px;
-                }
             }
 
             .equal {
@@ -61,6 +72,7 @@
 
                 button {
                     flex: 1;
+                    background-color: #FF8054;
                     padding: 20px;
                     font-size: 18px;
                 }
